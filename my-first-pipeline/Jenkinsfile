@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'node --version'
+        sh 'kubectl apply -f deployment.yml 
       }
     }
     stage('Production') {
